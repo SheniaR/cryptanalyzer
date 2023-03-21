@@ -7,12 +7,4 @@ public class EntryPoint {
         mainMenu();
     }
 
-
-
-
-
-
-
-
-
 }
