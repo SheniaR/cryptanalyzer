@@ -1,4 +1,4 @@
-package com.javarush.cryptanalyser.roslik.constants;
+package com.javarush.cryptanalyser.roslik.services.util;
 
 import java.util.Random;
 

@@ -9,7 +9,7 @@ import static com.javarush.cryptanalyser.roslik.services.IsCheck.*;
 public class BruteForceMenu {
     public static void bruteForceMenu(){
 
-        String pathInput = isPathInput(TEXT_PATH_INPUT_DECODE);
+        String pathInput = isPathInputDecode(TEXT_PATH_INPUT_DECODE);
 
         String pathOutputDecode = isPathOutputDecode(TEXT_PATH_OUTPUT_DECODE);
 

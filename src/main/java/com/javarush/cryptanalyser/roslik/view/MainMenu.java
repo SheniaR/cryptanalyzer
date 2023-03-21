@@ -1,6 +1,6 @@
 package com.javarush.cryptanalyser.roslik.view;
 
-import static com.javarush.cryptanalyser.roslik.constants.TextConstants.DELIMITER;
+import static com.javarush.cryptanalyser.roslik.constants.TextConstants.*;
 import static com.javarush.cryptanalyser.roslik.services.IsCheck.isMode;
 import static com.javarush.cryptanalyser.roslik.view.BruteForceMenu.bruteForceMenu;
 import static com.javarush.cryptanalyser.roslik.view.DecodeMenu.decodeMenu;
@@ -13,10 +13,7 @@ public class MainMenu {
 
         welcome();
 
-        int process = isMode("""
-                Введите 1, если хотите зашифровать текст.
-                Введите 2, если хотите расшифровать текст и вы знаете ключ.
-                Введите 3, если хотите расшифровать текст методом Brute force.""");
+        int process = isMode(TEXT_MODE_CHECK);
 
         switch (process) {
             case 1 -> encodeMenu();

@@ -11,7 +11,7 @@ public class DecodeMenu {
 
         int key = isKey(TEXT_KEY);
 
-        String pathInput = isPathInput(TEXT_PATH_INPUT_DECODE);
+        String pathInput = isPathInputDecode(TEXT_PATH_INPUT_DECODE);
 
         String pathOutputDecode = isPathOutputDecode(TEXT_PATH_OUTPUT_DECODE);
 

@@ -4,6 +4,9 @@ import static com.javarush.cryptanalyser.roslik.constants.CryptoAlphabet.LENGTH_
 
 public class TextConstants {
 
+    private TextConstants() {
+    }
+
     public static final String TEXT_KEY = String.format("""
                 Введите ключ:
                 Ключом может быть целое число от 1 до %d.
@@ -23,6 +26,11 @@ public class TextConstants {
     public static final String TEXT_PATH_OUTPUT_DECODE = """
                 Введите путь к файлу, куда записать расшифрованный файл.
                 Или нажмите Enter для установки файла по умолчанию.""";
+
+    public static final String TEXT_MODE_CHECK = """
+                Введите 1, если хотите зашифровать текст.
+                Введите 2, если хотите расшифровать текст и вы знаете ключ.
+                Введите 3, если хотите расшифровать текст методом Brute force.""";
 
     public static final int DELIMITER_COUNT = 40;
 

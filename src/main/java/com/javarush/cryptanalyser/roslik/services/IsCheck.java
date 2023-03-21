@@ -3,7 +3,7 @@ package com.javarush.cryptanalyser.roslik.services;
 import java.util.Scanner;
 
 import static com.javarush.cryptanalyser.roslik.constants.CryptoAlphabet.LENGTH_ALPHABET;
-import static com.javarush.cryptanalyser.roslik.constants.DefaultKeyRandom.randomKey;
+import static com.javarush.cryptanalyser.roslik.services.util.DefaultKeyRandom.randomKey;
 import static com.javarush.cryptanalyser.roslik.constants.DefaultPath.*;
 
 public class IsCheck {
@@ -40,13 +40,32 @@ public class IsCheck {
         }
     }
 
-    public static String isPathInput(String message) {
+    public static String isPathInputEncode(String message) {
         System.out.println(message);
         String pathInput = in.nextLine();
         if (pathInput.equals("")) {
             pathInput = INPUT;
         }
         return pathInput;
+    }
+
+    public static String isPathOutputEncode(String message) {
+        System.out.println(message);
+        String pathOutputDecode = in.nextLine();
+        if (pathOutputDecode.equals("")) {
+            pathOutputDecode = ENCODED;
+        }
+        return pathOutputDecode;
+    }
+
+
+    public static String isPathInputDecode(String message) {
+        System.out.println(message);
+        String pathOutputDecode = in.nextLine();
+        if (pathOutputDecode.equals("")) {
+            pathOutputDecode = ENCODED;
+        }
+        return pathOutputDecode;
     }
 
     public static String isPathOutputDecode(String message) {
@@ -58,12 +77,5 @@ public class IsCheck {
         return pathOutputDecode;
     }
 
-    public static String isPathOutputEncode(String message) {
-        System.out.println(message);
-        String pathOutputDecode = in.nextLine();
-        if (pathOutputDecode.equals("")) {
-            pathOutputDecode = ENCODED;
-        }
-        return pathOutputDecode;
-    }
+
 }

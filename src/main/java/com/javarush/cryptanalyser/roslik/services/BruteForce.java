@@ -12,7 +12,7 @@ public class BruteForce extends Decode {
 
     public static String bruteForce(String textInput) {
         StringBuilder textOutput = new StringBuilder();
-        for (int i = 1; i < LENGTH_ALPHABET; i++) {
+        for (int i = 0; i < LENGTH_ALPHABET; i++) {
             textOutput.delete(0, textOutput.length());
             textOutput.append(decode(textInput, i));
             Matcher matcher = pattern.matcher(textOutput);

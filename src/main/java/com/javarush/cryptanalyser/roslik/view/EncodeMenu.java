@@ -11,7 +11,7 @@ public class EncodeMenu {
 
         int key = isKey(TEXT_KEY);
 
-        String pathInput = isPathInput(TEXT_PATH_INPUT_ENCODE);
+        String pathInput = isPathInputEncode(TEXT_PATH_INPUT_ENCODE);
 
         String pathOutputEncode = isPathOutputEncode(TEXT_PATH_OUTPUT_ENCODE);
 
